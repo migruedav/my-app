@@ -6,9 +6,21 @@
   color: white;
 }
 
-.cardContainer {
+/*.cardContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content:space-evenly;
   width: 1200px;
+}*/
+
+.cardContainer{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 80px;
+}
+
+
+span{
+  color: white;
+  font-size: 2em;
 }
