@@ -41,7 +41,7 @@ const App = () => {
   ];
 
   const url = "https://html6.es/img/rey_"
-  const componentes = reyes.filter((rey) => rey.nombre.startsWith('A'))
+  const componentes = reyes.filter((rey) => rey.nombre.startsWith('E'))
   .map((rey) => (
     <MiComponente key={rey.nombre} nombre={rey.nombre} vacas={(rey.vacasComidas)*(rey.reinado)*365} años={rey.reinado} imagen = {`${url}${rey.nombre}.png`}  />
   ));
